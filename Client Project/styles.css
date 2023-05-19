@@ -1,0 +1,196 @@
+body{
+background-color: rgb(255, 255, 255);
+font-family: dunbar-low,sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: left;
+margin: 0;
+font-size: 30px;
+text-align: center;
+align-items: center;
+}
+main>img{
+    width: 40%;
+    padding: 1rem .5rem;
+    position: relative;
+    top: 1rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    position: relative;
+    font-size: 200px;
+    color:white;
+    text-align: center;
+    font-size: 80px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: grey;
+    background-size: cover;
+    height: 75px;
+    top: -10px;
+}
+header>img{
+    min-width: 300px;
+    max-width: 400px;
+    position:relative;
+    left: -1rem;
+    display: inline-block;
+}
+nav{
+    position: relative;
+    left: -4rem;
+    display: flex;
+}
+nav>a{
+    display:inline-block;
+    align-items: flex-start;
+    padding: 0 0 0 1.5rem;
+    flex-direction: row;
+    color:black;
+    font-style: dunbar-low,"san-serif";
+    font-size: 20px;
+    text-decoration: none;
+}
+section{
+    background-image: url(images/pattern.jpeg);
+    background-size: cover;
+    padding: 10rem;
+    color:white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.button{
+    align-content: center;
+    color:black;
+    background-size: contain;
+    background-color: orange;
+    border: black 1px solid;
+    font-family: dunbar-low, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+hr{
+   margin: 2rem;
+   border: 6px solid red; 
+}
+.abouttext{
+    padding: 1rem;
+    display:inline-block;
+}
+nav>a:hover{
+    color:orange;
+}
+.events{
+display: flex;
+flex-flow: column;
+align-items: center;
+}
+.events>.button{
+    position: relative;
+    left: 1rem;
+}
+fieldset{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+}
+form>label{
+    font-family: dunbar-low, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+form>.button{
+    position: relative;
+    top: 2rem;
+}
+#contactform{
+    padding: 2rem 2rem 4rem 2rem;
+    display: flex;
+    flex-wrap: column;
+}
+input[type=text],[type=email]{
+    font-size: 1.25rem;
+    width: 500px;
+    border: 3px solid orange;
+    padding: .5rem;
+    border-radius: .25rem;
+}
+.donatetext{
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+.donatetext>img{
+    width: 60%;
+    padding: 2rem;
+}
+main{
+    display: inline-block;
+}
+@media (min-width:800px){
+    nav>a{
+        font-size: 25px;
+        padding: 0 0 0 6rem;
+    }
+    nav{
+        position: relative;
+        left: 12rem;
+    }
+    main>img{
+        max-width:50%;
+    }
+      .abouttext, .donatetext{
+        display:flex;
+        flex-direction: row;
+        padding: 4rem 4rem 4rem 4rem;
+    }
+    .events{
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .events>.button{
+       position: relative;
+       top: -1rem;
+    }
+    div>.button{
+        position: relative;
+        bottom: -300px;
+        right: 400px;
+    }
+    .donatetext>img{
+        position: relative;
+        right: -6rem;
+    }
+    h1{
+        padding: 5rem;
+        text-align: justify;
+    }
+    form{
+        display:flex;
+        flex-flow: column;
+        padding: 5rem;
+    }
+    form>label{
+        padding: 1rem;
+    }
+    #contactform{
+        padding: 0 25rem 8rem 25rem;
+    }
+}
